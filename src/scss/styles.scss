@@ -1,3 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background: blue;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul {
+	list-style: none;
 }
