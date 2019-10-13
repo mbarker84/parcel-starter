@@ -14,3 +14,19 @@ img {
 ul {
 	list-style: none;
 }
+
+svg {
+	fill: currentColor;
+}
+
+/* Example styles, delete these and style as desired */
+header {
+	padding: 1rem;
+}
+
+.intro {
+	svg {
+		width: 1rem;
+		height: 1rem;
+	}
+}
