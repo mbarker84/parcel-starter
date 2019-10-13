@@ -34,7 +34,7 @@ yarn start
 
 Opens in the browser on [http://localhost:3000](http://localhost:3000).
 
-## To build
+## To build:
 
 ```
 npm run build
