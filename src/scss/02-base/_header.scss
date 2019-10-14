@@ -1,0 +1,33 @@
+/* Example styles, delete these and style as desired */
+.header {
+	height: 100vh;
+	max-height: rem(800px);
+	position: relative;
+	color: #fff;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: rem(20px);
+	text-align: center;
+}
+
+.header__intro {
+	svg {
+		width: rem(16px);
+		height: rem(16px);
+	}
+}

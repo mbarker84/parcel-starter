@@ -1,32 +1,7 @@
-* {
-	box-sizing: border-box;
-}
+@import './01-config/variables';
+@import './01-config/mixins';
+@import './01-config/functions';
 
-body {
-	margin: 0;
-}
-
-img {
-	max-width: 100%;
-	display: block;
-}
-
-ul {
-	list-style: none;
-}
-
-svg {
-	fill: currentColor;
-}
-
-/* Example styles, delete these and style as desired */
-header {
-	padding: 1rem;
-}
-
-.intro {
-	svg {
-		width: 1rem;
-		height: 1rem;
-	}
-}
+@import './02-base/reset';
+@import './02-base/typography';
+@import './02-base/header';
