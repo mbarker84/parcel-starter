@@ -4,8 +4,7 @@
 	"main": "index.html",
 	"license": "MIT",
 	"scripts": {
-		"start": "run-p parcel",
-		"parcel": "parcel src/index.html -p 3000 --open",
+		"start": "parcel src/index.html -p 3000 --open",
 		"build:parcel": "parcel build src/index.html",
 		"build": "npm run clean && npm run build:parcel",
 		"clean": "rm -rf dist/*"
@@ -15,7 +14,6 @@
 		"@babel/core": "^7.6.4",
 		"@babel/preset-react": "^7.6.3",
 		"node-sass": "^4.12.0",
-		"npm-run-all": "^4.1.5",
 		"parcel-bundler": "^1.12.4",
 		"parcel-plugin-imagemin": "^3.0.0",
 		"parcel-plugin-svg-sprite": "^1.4.1"
