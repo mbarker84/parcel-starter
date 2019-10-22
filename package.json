@@ -1,7 +1,7 @@
 {
 	"name": "parcel-starter",
 	"version": "1.0.0",
-	"main": "index.html",
+	"main": "src/index.html",
 	"license": "MIT",
 	"scripts": {
 		"start": "parcel src/index.html -p 3000 --open",
