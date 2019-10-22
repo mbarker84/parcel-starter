@@ -4,11 +4,10 @@
 	"main": "index.html",
 	"license": "MIT",
 	"scripts": {
-		"start": "run-p parcel scss",
+		"start": "run-p parcel",
 		"parcel": "parcel src/index.html -p 3000 --open",
 		"build:parcel": "parcel build src/index.html",
 		"build": "npm run clean && npm run build:parcel",
-		"scss": "node-sass --output-style compressed -o dist/css src/scss",
 		"clean": "rm -rf dist/*"
 	},
 	"dependencies": {},
