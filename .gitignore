@@ -2,5 +2,6 @@ node_modules
 dist
 .*
 !/.gitignore
+!/.babelrc
 yarn-error.log
 yarn.lock

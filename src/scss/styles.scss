@@ -4,4 +4,7 @@
 
 @import './02-base/reset';
 @import './02-base/typography';
-@import './02-base/header';
+
+@import './04-globals/header';
+@import './04-globals/footer';
+@import './04-globals/layout';
