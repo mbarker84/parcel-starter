@@ -8,3 +8,7 @@
 @import './04-globals/header';
 @import './04-globals/footer';
 @import './04-globals/layout';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
