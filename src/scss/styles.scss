@@ -1,10 +1,16 @@
-@import './01-config/variables';
-@import './01-config/mixins';
-@import './01-config/functions';
+@import "./01-config/variables";
+@import "./01-config/mixins";
+@import "./01-config/functions";
 
-@import './02-base/reset';
-@import './02-base/typography';
+@import "./02-base/reset";
+@import "./02-base/typography";
+@import "./02-base/objects";
 
-@import './04-globals/header';
-@import './04-globals/footer';
-@import './04-globals/layout';
+@import "./04-globals/header";
+@import "./04-globals/footer";
+@import "./04-globals/layout";
+@import "./04-globals/nav";
+@import "./04-globals/section";
+
+@import "./05-components/hero";
+@import "./05-components/gentle-giants";

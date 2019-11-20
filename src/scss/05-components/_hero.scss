@@ -1,0 +1,97 @@
+/* Example styles, delete these and style as desired */
+.hero {
+  max-height: rem(800px);
+  position: relative;
+  color: #fff;
+  background-color: #364b3b;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.hero__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1));
+    opacity: 1;
+    transition: opacity 4000ms;
+  }
+}
+
+.is-visible {
+  .hero__bg {
+    &::after {
+      opacity: 0.6;
+    }
+  }
+}
+
+.hero__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  @include bp($md) {
+    grid-template-columns: 3fr 1fr 3fr 6fr 3fr 1fr 3fr;
+  }
+}
+
+.hero__text {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-shadow: 0 0.1em rem(15px) rgba(0, 0, 0, 0.25);
+
+  @include bp($sm) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: center;
+  }
+
+  @include bp($md) {
+    grid-column: 2 / -2;
+  }
+}
+
+.hero__title {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.hero__intro {
+  width: 100%;
+
+  @include bp($md) {
+    font-size: rem(22px);
+  }
+}
+
+.hero__footprint {
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 60vmin;
+  transform: rotate(-40deg);
+  z-index: -1;
+}

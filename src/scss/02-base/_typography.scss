@@ -1,3 +1,30 @@
-a {
-	color: lime;
+body {
+  font-family: "Overpass Mono", monospace;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  line-height: 1;
+
+  @include bp($sm) {
+    font-size: rem(70px);
+  }
+
+  @include bp($md) {
+    font-size: rem(120px);
+  }
 }

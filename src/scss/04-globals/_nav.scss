@@ -1,0 +1,55 @@
+.nav__list {
+  display: flex;
+  height: rem(80px);
+  justify-content: flex-end;
+  align-items: center;
+  padding: rem(10px) rem(20px);
+}
+
+.nav__item {
+  a {
+    display: block;
+    padding: rem(10px) rem(20px);
+    text-decoration: none;
+    color: white;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &:not(:last-child) {
+    display: none;
+  }
+
+  @include bp($sm) {
+    &:not(:last-child) {
+      display: block;
+    }
+  }
+}
+
+.nav__item--cta {
+  a {
+    background-color: $brand;
+    color: black;
+    border-radius: rem(8px);
+    min-width: rem(180px);
+    text-align: center;
+    margin-left: rem(20px);
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      background-color: darken($brand, 15%);
+      text-decoration: none;
+    }
+
+    @include bp($sm) {
+      font-size: rem(20px);
+    }
+  }
+}
