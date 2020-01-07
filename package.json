@@ -1,21 +1,21 @@
 {
-  "name": "dinosaur-park",
-  "version": "1.0.0",
-  "main": "src/index.html",
-  "license": "MIT",
-  "scripts": {
-    "start": "parcel src/index.html -p 3000 --open",
-    "build:parcel": "parcel build src/index.html",
-    "build": "npm run clean && npm run build:parcel",
-    "clean": "rm -rf dist/*"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "node-sass": "^4.12.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-imagemin": "^3.0.0",
-    "parcel-plugin-svg-sprite": "^1.4.1"
-  }
+	"name": "parcel-starter",
+	"version": "1.0.0",
+	"main": "src/index.html",
+	"license": "MIT",
+	"scripts": {
+		"start": "parcel src/index.html -p 3000 --open",
+		"build:parcel": "parcel build src/index.html",
+		"build": "npm run clean && npm run build:parcel",
+		"clean": "rm -rf dist/*"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
+		"node-sass": "^4.12.0",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-imagemin": "^3.0.0",
+		"parcel-plugin-svg-sprite": "^1.4.1"
+	}
 }
